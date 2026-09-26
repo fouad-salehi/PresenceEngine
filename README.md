@@ -7,7 +7,6 @@ Real-time presence tracking system for multi-section teams.
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
----
 
 ## Overview
 
@@ -24,7 +23,6 @@ All activity is persisted to a MySQL database for historical reporting.
 
 The system is built on a custom MVC architecture using PDO for database access and Workerman for WebSocket communication, delivering sub-second updates without page refreshes.
 
----
 
 ## Features
 
@@ -54,7 +52,6 @@ The system is built on a custom MVC architecture using PDO for database access a
 | Authentication | Session-based with CSRF tokens      |
 | Configuration  | vlucas/phpdotenv                    |
 
----
 
 ## Architecture
 
@@ -86,7 +83,6 @@ The system is built on a custom MVC architecture using PDO for database access a
 +-----------------------------+
 ```
 
----
 
 ## Requirements
 
@@ -102,7 +98,6 @@ The system is built on a custom MVC architecture using PDO for database access a
 * A terminal capable of running long-lived processes for the WebSocket server
 * PHP built-in server can be used for development
 
----
 
 ## Installation
 
@@ -263,7 +258,6 @@ PresenceEngine/
 └── .env.example
 ```
 
----
 
 ## Database Schema
 
@@ -294,7 +288,6 @@ PresenceEngine/
 | `ip_address`  | `VARCHAR(45)`     | Client IP address (IPv4 or IPv6)    |
 | `created_at`  | `TIMESTAMP`       | Record creation timestamp           |
 
----
 
 ## Security
 
@@ -308,7 +301,6 @@ PresenceEngine implements several security measures:
 * Output escaping with `htmlspecialchars()`
 * Deactivated accounts are rejected during authentication
 
----
 
 ## Usage
 
@@ -326,7 +318,6 @@ PresenceEngine implements several security measures:
 2. View personal status at `/me`.
 3. The session is automatically logged on login and logout.
 
----
 
 ## Deployment Notes
 
@@ -336,7 +327,6 @@ PresenceEngine implements several security measures:
 * On Windows, use a process manager such as NSSM to run the WebSocket server as a service.
 * On Linux, use systemd or Supervisor.
 
----
 
 ## Roadmap
 
@@ -348,13 +338,11 @@ PresenceEngine implements several security measures:
 * [ ] Docker Compose configuration
 * [ ] Automated test suite
 
----
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
 
 ## Author
 
@@ -362,7 +350,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 GitHub: [@fouad-salehi](https://github.com/fouad-salehi)
 
----
 
 ## Acknowledgements
 
