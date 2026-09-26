@@ -39,6 +39,21 @@ The system is built on a custom MVC architecture using PDO for database access a
 * No frontend framework dependencies
 
 
+## Screenshots
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e67a5644-493c-47b4-821a-6f4b68b1810b" width="24%" style="border-radius: 12px;" />
+  <img src="https://github.com/user-attachments/assets/318305ab-c822-446c-833c-cd87b8a08972" width="24%" style="border-radius: 12px;" />
+  <img src="https://github.com/user-attachments/assets/05178255-235e-4d06-a0d2-eeeaa195e341" width="24%" style="border-radius: 12px;" />
+  <img src="https://github.com/user-attachments/assets/8a719eb5-b73f-4301-9c9a-6853e26dc3d6" width="24%" style="border-radius: 12px;" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/793fb10d-d1f2-495a-a285-277a60a7d13b" width="24%" style="border-radius: 12px;" />
+  <img src="https://github.com/user-attachments/assets/c266f132-95ff-453a-be92-3c470ab7c8d2" width="24%" style="border-radius: 12px;" />
+</p>
+
+
 ## Tech Stack
 
 | Layer          | Technology                          |
