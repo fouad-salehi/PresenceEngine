@@ -38,7 +38,6 @@ The system is built on a custom MVC architecture using PDO for database access a
 * Minimal, responsive dark UI built with vanilla CSS and JavaScript
 * No frontend framework dependencies
 
----
 
 ## Tech Stack
 
