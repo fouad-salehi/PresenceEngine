@@ -205,7 +205,6 @@ http://localhost:8000
 
 Log in using the admin credentials created in step 5.
 
----
 
 ## Project Structure
 
