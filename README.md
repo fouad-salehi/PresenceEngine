@@ -69,32 +69,12 @@ The system is built on a custom MVC architecture using PDO for database access a
 
 ## Architecture
 
-```text
-+-------------------+
-|    Web Browser    |
-|   (Admin / User)  |
-+---------+---------+
-          |
-          |
-   +------+------+
-   |             |
-  HTTP        WebSocket
-   |             |
-   v             v
-+---------+   +-----------+
-| Apache  |   | Workerman |
-| / Nginx |   |           |
-| public/ |   | ws-server |
-+----+----+   +-----+-----+
-     |              |
-     +------+-------+
-            |
-            v
-+-----------------------------+
-|       MySQL Database        |
-|                             |
-|  users      presence_logs   |
-+-----------------------------+
+```mermaid
+graph TD
+    A[Web Browser<br/>Admin / User] -->|HTTP| B[Apache / Nginx<br/>public/]
+    A -->|WebSocket| C[Workerman<br/>ws-server]
+    B --> D[MySQL Database<br/>users, presence_logs]
+    C --> D
 ```
 
 
