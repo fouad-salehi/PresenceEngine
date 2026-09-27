@@ -69,33 +69,8 @@ The system is built on a custom MVC architecture using PDO for database access a
 
 ## Architecture
 
-```
-+-------------------+
-|    Web Browser    |
-|   (Admin / User)  |
-+---------+---------+
-          |
-          |
-   +------+------+
-   |             |
-  HTTP        WebSocket
-   |             |
-   v             v
-+---------+   +-----------+
-| Apache  |   | Workerman |
-| / Nginx |   |           |
-| public/ |   | ws-server |
-+----+----+   +-----+-----+
-     |              |
-     +------+-------+
-            |
-            v
-+-----------------------------+
-|       MySQL Database        |
-|                             |
-|  users      presence_logs   |
-+-----------------------------+
-```
+<img width="1224" height="1285" alt="PresenceEngine Architecture" src="https://github.com/user-attachments/assets/89971834-0aca-4b03-91e6-5487d0278df5" />
+
 
 
 ## Requirements
