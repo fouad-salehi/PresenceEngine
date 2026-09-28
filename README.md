@@ -328,14 +328,14 @@ PresenceEngine implements several security measures:
 * [ ] Automated test suite
 
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-
 ## Author
 
 [**Fouad Salehi**](https://github.com/fouad-salehi)
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 
 ## Acknowledgements
