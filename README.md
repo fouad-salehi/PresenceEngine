@@ -334,9 +334,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Author
 
-**Fouad Salehi**
-
-GitHub: [@fouad-salehi](https://github.com/fouad-salehi)
+[**Fouad Salehi**](https://github.com/fouad-salehi)
 
 
 ## Acknowledgements
