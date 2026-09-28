@@ -1,11 +1,12 @@
 # PresenceEngine
 
-Real-time presence tracking system for multi-section teams.
-
 ![PHP](https://img.shields.io/badge/PHP-8.1+-777BB4?logo=php\&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-5.7+-4479A1?logo=mysql\&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+
+
+<img width="1672" height="941" alt="PresenceEngine - Real-time presence tracking system for multi-section teams banner" src="https://github.com/user-attachments/assets/fc4c7097-14ea-4632-9224-8b5442b3685a" />
 
 
 ## Overview
