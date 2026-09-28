@@ -1,4 +1,4 @@
-# Presence Engine
+# PresenceEngine
 
 ![PHP](https://img.shields.io/badge/PHP-8.1+-777BB4?logo=php\&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-5.7+-4479A1?logo=mysql\&logoColor=white)
