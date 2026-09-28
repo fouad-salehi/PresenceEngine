@@ -5,8 +5,8 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
+<img width="1672" height="836" alt="PresenceEngine - Real-time presence tracking system for multi-section teams banner" src="https://github.com/user-attachments/assets/e6cb98e3-fce7-41db-a554-248a74a83c73" />
 
-<img width="1672" height="941" alt="PresenceEngine - Real-time presence tracking system for multi-section teams banner" src="https://github.com/user-attachments/assets/fc4c7097-14ea-4632-9224-8b5442b3685a" />
 
 
 ## Overview
