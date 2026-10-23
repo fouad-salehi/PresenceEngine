@@ -1,13 +1,11 @@
 # PresenceEngine
 
-![PHP](https://img.shields.io/badge/PHP-8.1+-777BB4?logo=php\&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-5.7+-4479A1?logo=mysql\&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.1+-777BB4?logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-5.7+-4479A1?logo=mysql&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 <img width="1672" height="836" alt="PresenceEngine - Real-time presence tracking system for multi-section teams banner" src="https://github.com/user-attachments/assets/e6cb98e3-fce7-41db-a554-248a74a83c73" />
-
-
 
 ## Overview
 
@@ -22,8 +20,10 @@ It provides administrators with a live dashboard showing:
 
 All activity is persisted to a MySQL database for historical reporting.
 
-The system is built on a custom MVC architecture using PDO for database access and Workerman for WebSocket communication, delivering sub-second updates without page refreshes.
-
+> [!NOTE]
+> The system is built on a custom MVC architecture using PDO for database access and
+> Workerman for WebSocket communication, delivering sub-second updates without page
+> refreshes.
 
 ## Features
 
@@ -39,7 +39,6 @@ The system is built on a custom MVC architecture using PDO for database access a
 * Minimal, responsive dark UI built with vanilla CSS and JavaScript
 * No frontend framework dependencies
 
-
 ## Screenshots
 
 <p align="center">
@@ -54,11 +53,10 @@ The system is built on a custom MVC architecture using PDO for database access a
   <img src="https://github.com/user-attachments/assets/c266f132-95ff-453a-be92-3c470ab7c8d2" width="24%" style="border-radius: 12px;" />
 </p>
 
-
 ## Tech Stack
 
 | Layer          | Technology                          |
-| -------------- | ----------------------------------- |
+| :------------- | :---------------------------------- |
 | Backend        | PHP 8.1+ (Custom MVC, no framework) |
 | Database       | MySQL 5.7+ / MariaDB 10.3+          |
 | DB Access      | PDO with prepared statements        |
@@ -67,12 +65,9 @@ The system is built on a custom MVC architecture using PDO for database access a
 | Authentication | Session-based with CSRF tokens      |
 | Configuration  | vlucas/phpdotenv                    |
 
-
 ## Architecture
 
 <img width="1224" height="1285" alt="PresenceEngine Architecture" src="https://github.com/user-attachments/assets/89971834-0aca-4b03-91e6-5487d0278df5" />
-
-
 
 ## Requirements
 
@@ -87,7 +82,6 @@ The system is built on a custom MVC architecture using PDO for database access a
 * Apache or Nginx
 * A terminal capable of running long-lived processes for the WebSocket server
 * PHP built-in server can be used for development
-
 
 ## Installation
 
@@ -167,7 +161,8 @@ INSERT INTO users (
 
 ### 6. Start the WebSocket Server
 
-Open a dedicated terminal window. This process must remain running.
+> [!IMPORTANT]
+> Open a dedicated terminal window. This process must remain running.
 
 ```bash
 php ws-server.php start
@@ -194,7 +189,6 @@ http://localhost:8000
 ```
 
 Log in using the admin credentials created in step 5.
-
 
 ## Project Structure
 
@@ -247,13 +241,12 @@ PresenceEngine/
 └── .env.example
 ```
 
-
 ## Database Schema
 
 ### `users`
 
 | Column          | Type           | Description                            |
-| --------------- | -------------- | -------------------------------------- |
+| :-------------- | :------------- | :------------------------------------- |
 | `id`            | `INT UNSIGNED` | Primary key                            |
 | `username`      | `VARCHAR(50)`  | Unique login name                      |
 | `email`         | `VARCHAR(100)` | Unique email address                   |
@@ -267,7 +260,7 @@ PresenceEngine/
 ### `presence_logs`
 
 | Column        | Type              | Description                         |
-| ------------- | ----------------- | ----------------------------------- |
+| :------------ | :---------------- | :---------------------------------- |
 | `id`          | `BIGINT UNSIGNED` | Primary key                         |
 | `user_id`     | `INT UNSIGNED`    | Foreign key to `users`              |
 | `section`     | `VARCHAR(50)`     | Section at login time               |
@@ -276,7 +269,6 @@ PresenceEngine/
 | `is_online`   | `TINYINT(1)`      | Current presence flag               |
 | `ip_address`  | `VARCHAR(45)`     | Client IP address (IPv4 or IPv6)    |
 | `created_at`  | `TIMESTAMP`       | Record creation timestamp           |
-
 
 ## Security
 
@@ -290,6 +282,8 @@ PresenceEngine implements several security measures:
 * Output escaping with `htmlspecialchars()`
 * Deactivated accounts are rejected during authentication
 
+> [!WARNING]
+> Set `APP_DEBUG=false` and use HTTPS in production environments.
 
 ## Usage
 
@@ -307,7 +301,6 @@ PresenceEngine implements several security measures:
 2. View personal status at `/me`.
 3. The session is automatically logged on login and logout.
 
-
 ## Deployment Notes
 
 * Set `APP_DEBUG=false` in production.
@@ -316,6 +309,9 @@ PresenceEngine implements several security measures:
 * On Windows, use a process manager such as NSSM to run the WebSocket server as a service.
 * On Linux, use systemd or Supervisor.
 
+> [!CAUTION]
+> The WebSocket server must run as a persistent process. Use a process manager
+> (NSSM, systemd, or Supervisor) to keep it alive across reboots.
 
 ## Roadmap
 
@@ -327,16 +323,13 @@ PresenceEngine implements several security measures:
 * [ ] Docker Compose configuration
 * [ ] Automated test suite
 
-
 ## Author
 
 [**Fouad Salehi**](https://github.com/fouad-salehi)
 
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 
 ## Acknowledgements
 
